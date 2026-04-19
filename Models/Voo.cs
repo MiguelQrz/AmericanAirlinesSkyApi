@@ -9,4 +9,6 @@ public class Voo
     public required int AeronaveId { get; set; }
     public required string Status { get; set; }
 
+    public Aeronave? Aeronave { get; set; }
+    public ICollection<Reserva> Reservas { get; set; } = new List<Reserva>();
 }

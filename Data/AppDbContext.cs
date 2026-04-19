@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using AmericanAirlinesApi.Models;
 
-namespace EcoMonitorApi.Data;
+namespace AmericanAirlinesApi.Data;
 
 public class AppDbContext : DbContext
 {

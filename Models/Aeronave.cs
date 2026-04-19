@@ -6,4 +6,6 @@ public class Aeronave
     public required string Modelo { get; set; }
     public required string CodigoCauda { get; set; }
     public int CapacidadePassageiros { get; set; }
+
+    public ICollection<Voo> Voos { get; set; } = new List<Voo>();
 }

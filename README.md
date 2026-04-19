@@ -1,1 +1,5 @@
 # AmericanAirlinesSkyApi
+
+Em um sistema de reservas global como o da American Airlines, como você garantiria que dois usuários em países diferentes não reservem o mesmo assento no exato mesmo segundo? Pesquise sobre 'Optimistic Concurrency' ou 'Pessimistic Locking' e escreva um parágrafo sobre.
+
+Para garantir que dois usuários em países diferentes não reservem o mesmo assento simultaneamente, podemos usar Optimistic Concurrency. Nesse approach, o sistema permite que múltiplas transações ocorram sem bloqueio inicial, mas verifica se houve mudanças antes de confirmar. Por exemplo, ao tentar reservar um assento, o sistema verifica se o assento ainda está disponível no momento da confirmação. Se outro usuário já o reservou, a transação falha e o usuário é notificado para escolher outro assento. Isso evita conflitos sem impactar a performance, diferentemente do Pessimistic Locking que bloquearia o recurso preventivamente, potencialmente causando delays em sistemas globais.

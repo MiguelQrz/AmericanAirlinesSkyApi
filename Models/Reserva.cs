@@ -7,4 +7,5 @@ public class Reserva
     public required string NomePassageiro { get; set; }
     public required string Assento { get; set; }
 
+    public Voo? Voo { get; set; }
 }

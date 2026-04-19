@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using AmericanAirlinesApi.Models;
-using EcoMonitorApi.Data;
+using AmericanAirlinesApi.Data;
 
 namespace AmericanAirlinesApi.Controllers;
 

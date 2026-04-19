@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using AmericanAirlinesApi.Models;
-using EcoMonitorApi.Data;
+using AmericanAirlinesApi.Data;
 
 namespace AmericanAirlinesApi.Controllers;
 
@@ -32,7 +32,7 @@ public class ReservasController(AppDbContext context) : ControllerBase
                 return BadRequest("Não foi possível cadastrar sua reserva, esse voô já está lotado.");
             }else if (reserva.Assento.EndsWith("A") || reserva.Assento.EndsWith("F"))
             {
-                Console.WriteLine("");
+                Console.WriteLine("Assento na janela reservado com sucesso!");
             }
         context.Reservas.Add(reserva);
         await context.SaveChangesAsync();
